@@ -1,14 +1,7 @@
-table, th, td{
-    border: 1px solid black;
-}
 
-table{
-    width: 70%;
-    margin: 0 auto;
-}
-th ,td{
-    padding: 10px;
-}
-th{
-    text-align: left;
-}
+@import "./table.css";
+@import "./edicion.css";
+/* @import "./fonts.css"; */
+@import "./color.css";
+/* @import "./common.css"; */
+@import "./header.css";
