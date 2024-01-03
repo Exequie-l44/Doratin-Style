@@ -61,7 +61,7 @@ header {
     height: auto;
     position: fixed;
     left: 20%;
-    top: 1%;
+    top: 0%;
 }
     
 /* IMAGEN DE FONDO INICIO DE PAGINA */
@@ -72,7 +72,7 @@ header {
 }
 /* Estilo para la sección con ID "inicio" y sus filas */
 #inicio .row {
-    background-image: url(/134259181-peluquería-peluquería-herramientas-sobre-fondo-de-madera-vieja-espacio-de-copia.jpg);
+    background-image: url(/img/stock-photo-top-view-various-professional-barber.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     color: #000000;

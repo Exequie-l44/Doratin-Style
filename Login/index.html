@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doratin Style</title> 
-    <link rel="icon" href="lp.ico">
-    <link rel="stylesheet" href="/Pagina/style.css">
+    <link rel="icon" href="/img/logo.png">
+    <link rel="stylesheet" href="/Login/style.css">
+
   
+
+    +
 </head>
 <body>
     <div class="content-wrapper">
@@ -27,13 +30,18 @@
                     <a href="#">Olvidé la clave</a>
                     <a href="#">Registro</a>
                 </div>
-                <input type="submit" value="Iniciar">
+                <input type="button" value="Iniciar" id="loginButton">
+                
+
                 
             </div>
         </div>  
     </div>
     <canvas></canvas>
     <script>
+        document.getElementById("loginButton").onclick = function () {
+            location.href = "/html/index.html";
+        };
         const { random, atan2, cos, sin, hypot } = Math;
         const max = 200;
         const canvas = document.createElement("canvas");

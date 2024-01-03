@@ -71,6 +71,28 @@ body
     }
 }
 
+/* ... el resto de tu código CSS ... */
+
+input[type="button"] {
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    padding: 11px 25px;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 20px; /* Hace que el botón sea redondeado */
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center; /* Centrar el texto horizontalmente */
+    line-height: 1;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+input[type="button"]:hover {
+    background-color: #515151; /* Cambia el color de fondo al pasar el cursor */
+    color: #fff; /* Cambia el color del texto al pasar el cursor */
+}
+
 .form
 {
     position: absolute;
