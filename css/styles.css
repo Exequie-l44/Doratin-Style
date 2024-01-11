@@ -1,0 +1,355 @@
+ /* Estilos generales de la pagina */
+ body {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Mínimo 100% del viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* ENCABEZADO DE LA PAGINA */
+
+header {
+    color: #fff;
+    text-align: center;
+    padding: 25;
+    transition: background-color 0.5s ease;
+    text-align: center;
+}
+
+.fondo-inicial {
+    background-color: transparent;
+  }
+  
+
+
+/* Estilo para la barra superior fija (top) */
+.top {
+    background-color: hsla(0, 0%, 5%, 0.5);
+    height: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 45px;
+    z-index: 1000;
+    display: flex;  
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+/* Estilo para los enlaces dentro de la barra superior */
+.top a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 70px;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 300ms;
+}
+
+/* Estilo al pasar el cursor sobre los enlaces */
+.top a:hover {
+   color: #FDD835;
+}
+
+/* Estilo para la imagen del logo */
+.logo img {
+    width: 8%;
+    height: auto;
+    position: fixed;
+    left: 20%;
+    top: 0%;
+}
+    
+/* IMAGEN DE FONDO INICIO DE PAGINA */
+/* Estilo para el encabezado y párrafos dentro de containers */
+.containers h1,p{
+    color:#FDD835;
+    margin-bottom: 20px
+}
+/* Estilo para la sección con ID "inicio" y sus filas */
+#inicio .row {
+    background-image: url(/img/stock-photo-top-view-various-professional-barber.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000000;
+    padding-top: 200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    
+}
+
+/* Estilo de las filas */
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    height: 30%;
+}
+/* Estilo de las columnas de ancho medio (col-md-5) */
+.col-md-5 {
+    height: 100%; 
+    
+ 
+}
+/* Estilo de los contenedores */
+.containers{
+    max-width: auto;
+}
+/* Estilo para columnas con clase col-md-5 */
+.col-md-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+    margin: -5% 20%;
+    text-align: left;
+}
+/* Estilo para elementos con clase amarillo */
+.amarillo {
+    color: #FCEC2A;
+}
+/* Estilo para elementos con clase p24 */
+.p24 {
+    font-size: 24px !important;
+}
+/* Estilo para elementos con clase p300 */
+.p300 {
+    font-weight: 300 !important;
+}
+/* Estilo para elementos con clase roboto */
+.roboto {
+    font-family: 'Roboto Condensed', sans-serif !important;
+}
+/* Estilo para elementos con clase p92 */
+.p92 {
+    font-size: 50px !important;
+}
+/* Estilo para párrafos */
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+/* Estilo para elementos con clase p16 */
+.p16 {
+    font-size: 16px !important;
+}
+/* Estilo para la lista no ordenada dentro de la etiqueta nav */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+/* Estilo para los elementos de lista dentro de la etiqueta nav */
+nav li {
+    margin: 0 15px;
+}
+/* Estilo específico para el elemento con ID "inicio" dentro de la clase "nav" */
+.nav #inicio {
+    margin: 20px;
+    background-color: #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px; /* Ajusta el radio según sea necesario para obtener esquinas más redondeadas */
+    padding: 20px;
+    text-align: center;
+}
+/* Estilo para el pseudo-elemento "before" del elemento con ID "inicio" */
+#inicio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 20px; /* Puedes ajustar este valor para redondear más o menos las esquinas */
+    z-index: -1;
+}
+/* Estilo para los elementos h2 y p dentro del elemento con ID "inicio" */
+#inicio > h2, #inicio > p {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+/* Estilo para elementos con clase "menu" dentro de elementos con clase "section" */
+.section  .menu{
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+    
+}
+
+/* Estilos específicos para cada sección (puedes personalizarlos) */
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    color: #ffffff; /* Cambié el color a azul, ajusta según tu preferencia */
+    animation: neon-glow 1.5s ease-in-out infinite alternate;
+}
+/* Animación de resplandor de neón utilizando keyframes */
+@keyframes neon-glow {
+    from {
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.8);
+    }
+    to {
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 0, 0, 0.8);
+    }
+}
+
+/* Estilo para el pseudo-elemento "before" de los enlaces dentro de la etiqueta nav */
+nav a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #FDD835;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+/* Estilo al pasar el ratón sobre los enlaces dentro de la etiqueta nav */
+nav a:hover {
+nav a:hover {
+    color: #FDD835;
+}
+}
+/* Estilo al pasar el ratón sobre el pseudo-elemento "before" de los enlaces dentro de la etiqueta nav */
+nav a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* Estilos para el footer */
+
+/*Pie de pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: rgb(20, 20, 20);  
+    
+}
+/*Separando en columnas y ajustando los contenedores del grupo 1*/
+.pie-pagina .grupo-1{
+    width: 89%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 25px;
+    color: #fff;
+    height: 230px;
+}
+/*Logotipo DORATIN STYLE PIE DE PAGINA*/
+.pie-pagina .grupo-1  figure img {
+    width: 60%; /* Ajusta el ancho al 100% del contenedor (figure) */
+    margin-left: 0; 
+    height: auto; /* Mantiene la proporción original de la imagen ajustando automáticamente la altura */
+
+}
+/*Logotipo Doratyn Style PIE DE PAGINA*/
+.pie-pagina .grupo-1  figure{
+    margin-left: 0;
+}
+/*Dando color-proporcion-alineacion a los elementos del grupo 1 de todos los box*/
+.pie-pagina .grupo1 .box{
+    color: #fff;    
+    width: 80%;
+    text-align: center;
+}
+
+/*Titulo EXPLORA pie de pagina*/
+.pie-pagina  h2 {
+    text-align: center;
+    font-size: 16px;
+}
+/*Inicio y catalogo del pie de pagina*/
+.pie-pagina .explora a{
+    text-decoration: none;
+    color: #717171;
+    margin-left: 141px;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    line-height: 1.5;        
+    font-size: 14px;
+    transition: all 300ms ease;
+
+}
+/*Animacion cursor sobre inicio y catalogo*/
+.pie-pagina .explora a:hover{
+    color: #fff;
+}
+
+
+/*Parte del final del footer*/
+.pie-pagina .grupo-2{
+    background-color: rgb(20, 20, 20);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+    border-top: 1px solid rgb(27, 27, 33);
+    font-size: 12px;
+}
+/*Estilo para enlaces dentro de la clase "explora" dentro de la clase "pie-pagina" */
+.pie-pagina .explora a:hover{
+    color: #fff;
+}
+
+
+
+.panel-solar:hover{
+box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+transform: translateY(-3%);
+}
+
+
+/* Estilos para el contenedor */
+.container{
+background-color: #000000;
+}
+
+
+/* Agrega la línea horizontal negra */
+.contacto .informacion::after {
+content: ""; /* Añade un elemento pseudo ::after */
+position: absolute; /* Posiciona de forma absoluta con respecto al contenedor padre */
+left: 0;
+bottom: 50px; /* Ajusta la distancia desde el borde inferior */
+width: calc(100% - 400px); /* Ajusta la longitud de la línea (ancho total menos el margen izquierdo) */
+height: 1px; /* Grosor de la línea */
+background-color: black; /* Color de la línea */
+margin-left: 200px; /* Ajusta el margen izquierdo para coincidir con el texto */
+}
+
+.ventajas-container {
+display: flex;
+justify-content: space-around;
+align-items: stretch;
+}
+
+.foquwu {
+margin-bottom: -15px !important;
+}
+
+.txt {
+font-family: 'Montserrat';
+position: absolute;
+display: flex;
+top: 110%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 20px;
+max-width: 40%;
+}
