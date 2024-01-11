@@ -5,6 +5,7 @@ table, th, td{
 table{
     width: 70%;
     margin: 0 auto;
+    background-color: gray
 }
 th ,td{
     padding: 10px;

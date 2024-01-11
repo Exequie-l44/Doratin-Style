@@ -1,7 +1,11 @@
-
-@import "./table.css";
-@import "./edicion.css";
+@import "./nav.css";
+@import "./tabla.css";
+@import "./formulario.css";
 /* @import "./fonts.css"; */
 @import "./color.css";
 /* @import "./common.css"; */
 @import "./header.css";
+
+body{
+    background-image: url(../img/fondoDoratynStyle.jpg)
+}
