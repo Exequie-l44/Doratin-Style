@@ -23,26 +23,29 @@ export function insertarFilaEnTabla(transaccionFormData){
     
     nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(1);
     nuevoTipoCeldaRef.textContent = new FormData(form).get("fecha")
-    
+
     nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(2);
-    nuevoTipoCeldaRef.textContent = new FormData(form).get("cliente")
-    
-    nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(3);
     nuevoTipoCeldaRef.textContent = new FormData(form).get("hora")
     
+    nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(3);
+    nuevoTipoCeldaRef.textContent = new FormData(form).get("cliente")
+
     nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(4);
-    nuevoTipoCeldaRef.textContent =new FormData(form).get("colaborador")
+    nuevoTipoCeldaRef.textContent = new FormData(form).get("servicio")
     
     nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(5);
-    nuevoTipoCeldaRef.textContent = new FormData(form).get("cajero")
+    nuevoTipoCeldaRef.textContent =new FormData(form).get("colaborador")
     
     nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(6);
-    nuevoTipoCeldaRef.textContent = new FormData(form).get("metodo")
+    nuevoTipoCeldaRef.textContent = new FormData(form).get("cajero")
     
     nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(7);
-    nuevoTipoCeldaRef.textContent =new FormData(form).get("descuento")
+    nuevoTipoCeldaRef.textContent = new FormData(form).get("metodo")
     
     nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(8);
+    nuevoTipoCeldaRef.textContent =new FormData(form).get("descuento")
+    
+    nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(9);
     nuevoTipoCeldaRef.textContent = new FormData(form).get("pagoTotal")
   }
   

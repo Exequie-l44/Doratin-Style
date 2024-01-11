@@ -14,7 +14,7 @@
     <nav >
         <ul>
           <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./tabla.html">Turnos</a></li>
+          <li><a href="tabla.html">Turnos</a></li>
         </ul>
       </nav>
     <h1>Turnos</h1>
@@ -24,16 +24,43 @@
             <input id="fecha" name="fecha" type="date">
         </div>
         <div class="claseFormulario">
-            <label for="cliente" >Cliente</label>
-            <input id="cliente" name="cliente" type="text">
-        </div>
-        <div class="claseFormulario">
             <label for="hora" >Hora</label>
             <input id="hora" name="hora" type="time">
         </div>
         <div class="claseFormulario">
+            <label for="cliente" >Cliente</label>
+            <input id="cliente" name="cliente" type="text">
+        </div>
+     
+        <div class="claseFormulario">
             <label for="colaborador" >Colaborador</label>
             <input id="colaborador" name="colaborador" type="text">
+        </div>
+        <div class="claseFormulario">
+            <label id="" for="servicio">Servicio</label>
+            <select type="radio" name="servicio" id="servicio">
+                <option name="servicio" type="radio" value="Corte de Pelo">Corte de pelo</option>
+                <option name="servicio" type="radio" value="Corte y Barba">Corte y Barba</option>
+                <option name="Servicio" type="radio" value="Perfilado de Ceja">Perfilado de Ceja</option>
+                <option name="Servicio" type="radio" value="Alisado">Alisado</option>
+                <option name="Servicio" type="radio" value="Plastificado">Plastificado</option>
+                <option name="Servicio" type="radio" value="Botox">Botox</option>
+                <opiton name="Servicio" type="radio" value="Shock de Keratina">Shock de Keratina</option>
+                <option name="Servicio" type="radio" value="Reestructurador">Reestructurador</option>
+                <option name="Servicio" type="radio" value="Cauterizado">Cauterizado</option>
+                <option name="Servicio" type="radio" value="Biotina">Biotina</option>
+                <option name="Servicio" type="radio" value="Nutricion (oro liquido)">Nutricion (oro liquido)</option>
+                <option name="Servicio" type="radio" value="Nutricion (baño de crema)">Nutricion (baño de crema)</option>
+                <option name="Servicio" type="radio" value="Trenzas Frontales">Trenza Frontales</option>
+                <option name="Servicio" type="radio" value="Trenzas Laterales">Trenzas Laterales</option>
+                <option name="Servicio" type="radio" value="Trenzas Laterales con Diseño">Trenzas Laterales con Diseño</option>
+                <option name="Servicio" type="radio" value="Trenzas de Ambos Lados">Trenzas de Ambos Lados</option>
+                <option name="Servicio" type="radio" value="Trenzas de Ambos Laterales con Diseño">Trenzas de Ambos Laterales con Diseño</option>
+                <option name="Servicio" type="radio" value="Cornrows">Cornrows</option>
+                <option name="Servicio" type="radio" value="Box Braids">Box Braids</option>
+                <option name="Servicio" type="radio" value="Box Braids con Diseño">Box Braids con Diseño</option>
+
+            </select>
         </div>
         <div class="claseFormulario">
             <label for="cajero" >Cajero</label>
@@ -55,40 +82,28 @@
             <input id="pagoTotal" name="pagoTotal" type="number">
         </div>
         <div class="claseFormulario">
-            <button type="submit">subir</button>
+            <button type="submit">Subir</button>
         </div>
-        
-       
-        
-        
-        
-        
-        
 
     </form>
 
     <div>
         <table id="tablaTransaccion">
-          <tr><!-- table row (fila) -->
-            <th>Turnos</th><!-- table head -->
-            <th>Fecha</th>
-            <th>Cliente</th>
-            <th>Hora</th>
-            <th>Colaborador</th>
-            <th>Cajero</th>
-            <th>Metodo de pago</th>
-            <th>Desceunto</th>
-            <th>Pago Total</th>
-            
-          </tr>
-        </table>
-      </div>
+            <tr><!-- table row (fila) -->
+              <th>Turnos</th><!-- table head -->
+              <th>Fecha</th>
+              <th>Hora</th>
+              <th>Cliente</th>
+              <th>Servicio</th>
+              <th>Colaborador</th>
+              <th>Cajero</th>
+              <th>Metodo de pago</th>
+              <th>Desceunto</th>
+              <th>Pago Total</th>
+              
+            </tr>
 
-
-
-
-    <div>
-        <a href="./tabla.html">turnos </a>
+          </table>
       </div>
  
     <script src="../js/formulario-modificacion.js" type="module"></script>
