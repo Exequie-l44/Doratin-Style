@@ -1,25 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="./css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Doratin Style </title>
-  </head>
-  <body>
-    <header>
-      <img src="./img/logo.png" height="50" alt="Logo de Doratine Style">
-      <h1>Doratine Style</h1>
-  </header>
-  <nav >
-    <ul>
-      <li><a href="./index.html">Inicio</a></li>
-      <li><a href="./html/tabla.html">Turnos</a></li>
-      <li class="pull-right"><a href="./html/formulario.html">Edicion</a></li>
-    </ul>
-  </nav>
-    <div id="app"></div>
 
-  </body>
+<head>
+    <!-- Configuración Inicial -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doratin Style</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@100&family=PT+Sans+Narrow&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- Encabezado de la página -->
+    <header class="fondo-inicial">
+        <nav>
+            <div class="top">
+                <!-- Logo y Menú -->
+                <div class="logo">
+                    <img src="/img/logo.png" alt="Logo de la tienda de paneles solares">
+                </div>
+                <ul>
+                    <li><a href="#inicio">Inicio</li>
+                    <li><a href="./html/tabla.html">Turnos</a></li>
+                    <li><a href="/html/formulario.html">Formulario</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección de inicio -->
+    <section id="inicio">
+        <div class="containers">
+            <!-- Contenido de la sección de inicio -->
+            <div class="row">
+                <div class="col-md-5">
+                    <h4 class="amarillo p24 p300 roboto">DORATIN STYLE</h4>
+                    <h1 class="p92 p300 roboto mt10">La <br><b class="p700">MAGIA</b><br> Ocurre cuando AMAS los que haces</h1>
+                    <!-- <p class="p16 mt20">Expertos en la instalación de <b>de servicios</b> para peluquerias y
+                        comercios.<br><b>Instalamos programas en todo el país.</b><br><br> -->
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <!-- Logo de la empresa -->
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="/img/logo.png" alt="Logo de la empresa">
+                    </a>
+                </figure>
+            </div>
+
+        <!-- Derechos de autor -->
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>Doratin Style</b> - Todos los derechos reservados </small>
+        </div>
+    </footer>
+
+</body>
 </html>

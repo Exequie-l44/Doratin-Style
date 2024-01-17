@@ -2,10 +2,22 @@
 @import "./tabla.css";
 @import "./formulario.css";
 /* @import "./fonts.css"; */
-@import "./color.css";
+/* @import "./color.css"; */
 /* @import "./common.css"; */
 @import "./header.css";
 
 body{
-    background-image: url(../img/fondoDoratynStyle.jpg)
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
 }
+
+/* Estilo para la imagen del logo */
+/* .logo img {
+    width: 8%;
+    height: auto;
+    position: fixed;
+    left: 20%;
+    top: 0%;
+} */
