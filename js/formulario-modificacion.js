@@ -7,8 +7,24 @@ form.addEventListener("submit", function (event) {
   let turnoObjeto = convertirFormDataEnObjeto(transaccionFormData);
   guardarTurnoComoObjeto(turnoObjeto);
   insertarFilaEnTabla(turnoObjeto);
+  //reseteamos lo valores del formulario que pusimos antes
+  form.reset(); 
 });
-function convertirFormDataEnObjeto(transaccionFormData) {
+
+                         //escucha cuando el contenido del DOM se carga
+document.addEventListener("DOMContentLoaded", function(event){
+  //turnoObjetoArray trae la informacion del localStorage parseada
+  let turnoObjetoArray = JSON.parse(localStorage.getItem("datosTurno"));
+  //con el forEach recorro los turnos antes cargados y los inserta en la tabla
+  turnoObjetoArray.forEach(
+    function(arrayElemento){
+        insertarFilaEnTabla(arrayElemento);
+        console.log("Se insertaron los datos en la tabla");
+  })
+
+})
+
+ function convertirFormDataEnObjeto(transaccionFormData) {
   //obtenemos todos los valores de la tabla con el transaccionFromData.get()
   let turnoNumero = transaccionFormData.get("");
   let turnoFecha = transaccionFormData.get("fecha");
