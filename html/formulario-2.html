@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="/img/logo.png" type="image/png" sizes="16x16">
+    <title>Edicion</title>
+</head>
+
+<body>
+    <header>
+        <img src="../img/logo.png" height="50" alt="Logo de Doratine Style">
+        <h1>Doratine Style</h1>
+    </header>
+    <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="tabla.html">Turnos</a>
+    </nav>
+    <main>
+        <h2>Turnos</h2>
+        <form id="formulario">
+            <fieldset>
+                <p>
+                    <label>Fecha <input name="fecha" type="date" required></label>
+                </p>
+                <p>
+                    <label>Hora <input name="hora" type="time" required></label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <p>
+                    <label>Cliente <input name="cliente" type="text" required></label>
+                </p>
+                <p>
+                    <label>Colaborador <input name="colaborador" type="text" required></label>
+                </p>
+                <p>
+                    <label for="servicio">Servicio</label>
+                    <select id="servicio" name="servicio">
+                        <option value="Corte de Pelo">Corte de pelo</option>
+                        <option value="Corte y Barba">Corte y Barba</option>
+                        <option value="Perfilado de Ceja">Perfilado de Ceja</option>
+                        <option value="Alisado">Alisado</option>
+                        <option value="Plastificado">Plastificado</option>
+                        <option value="Botox">Botox</option>
+                            <option value="Reestructurador">Reestructurador</option>
+                            <option value="Cauterizado">Cauterizado</option>
+                            <option value="Biotina">Biotina</option>
+                            <option value="Nutricion (oro liquido)">Nutricion (oro liquido)
+                            </option>
+                            <option value="Nutricion (baño de crema)">Nutricion (baño de
+                                crema)</option>
+                            <option value="Trenzas Frontales">Trenza Frontales</option>
+                            <option value="Trenzas Laterales">Trenzas Laterales</option>
+                            <option value="Trenzas Laterales con Diseño">Trenzas Laterales
+                                con Diseño</option>
+                            <option value="Trenzas de Ambos Lados">Trenzas de Ambos Lados
+                            </option>
+                            <option value="Trenzas de Ambos Laterales con Diseño">Trenzas de
+                                Ambos Laterales con Diseño</option>
+                            <option value="Cornrows">Cornrows</option>
+                            <option value="Box Braids">Box Braids</option>
+                            <option value="Box Braids con Diseño">Box Braids con Diseño
+                            </option>
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset>
+                <p>
+                    <label for="cajero" >Cajero</label>
+                    <input id="cajero" name="cajero" type="text" required>
+                </p>
+                <p>
+                    <label for="metodo">Meodo de Pago</label>
+                    <select name="metodo" id="metodo">
+                        <option value="debito">Debito</option>
+                        <option value="efectivo">Efectivo</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="descuento" >Desceunto</label>
+                    <input id="descuento" name="descuento" type="number" required>
+                </p>
+                <p>
+                    <label for="pagoTotal" >Pago Total</label>
+                    <input id="pagoTotal" name="pagoTotal" type="number" required>
+                </p>
+            </fieldset>
+            <button type="submit">Subir</button>
+        </form>
+    </main>
+</body>
+
+</html>
