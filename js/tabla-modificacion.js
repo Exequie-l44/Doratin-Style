@@ -20,32 +20,30 @@ document.addEventListener("DOMContentLoaded", function(event){
   
     let nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(0); //Agrega un nueva celda a la tabla
     //textContent remplaza en el html por el transaccionFormData.get que trae el name del formulario
-    nuevoTipoCeldaRef.textContent = turnoObjeto["turnoNumero"];
   
-    nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(1);
     nuevoTipoCeldaRef.textContent = turnoObjeto["turnoFecha"];
   
-    nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(2);
+    nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(1);
     nuevoTipoCeldaRef.textContent = turnoObjeto["turnoHora"];
   
-    nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(3);
+    nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(2);
     nuevoTipoCeldaRef.textContent = turnoObjeto["turnoCliente"];
   
-    nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(4);
+    nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(3);
     nuevoTipoCeldaRef.textContent = turnoObjeto["turnoServicio"];
   
-    nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(5);
+    nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(4);
     nuevoTipoCeldaRef.textContent = turnoObjeto["turnoColaborador"];
   
-    nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(6);
+    nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(5);
     nuevoTipoCeldaRef.textContent = turnoObjeto["turnoCajero"];
   
-    nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(7);
+    nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(6);
     nuevoTipoCeldaRef.textContent = turnoObjeto["turnoMetodo"];
   
-    nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(8);
+    nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(7);
     nuevoTipoCeldaRef.textContent = turnoObjeto["turnoDescuento"];
   
-    nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(9);
+    nuevoTipoCeldaRef = nuevaTransanccionRowRef.insertCell(8);
     nuevoTipoCeldaRef.textContent = turnoObjeto["turnoTotal"];
   }
