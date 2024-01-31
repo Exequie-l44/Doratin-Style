@@ -98,6 +98,7 @@ function insertarFilaEnTabla(turnoObjeto) {
 
   let nuevaCeldaBorrar = nuevoTurnoRowRef.insertCell(9);
   let botonBorrar = document.createElement("button");
+  botonBorrar.classList.add('btn', 'btn-borrar')
   botonBorrar.textContent = "Eliminar";
   //appendChil agrega un etiqueta tipo hijo a la etiqueta padre en este caso al al td
   nuevaCeldaBorrar.appendChild(botonBorrar);
@@ -110,11 +111,6 @@ function insertarFilaEnTabla(turnoObjeto) {
     borrarTurnoObj(turnoId);
 
   })
-  // let nuevaCeldaEditar = nuevaTransanccionRowRef.insertCell(11);
-  // let botonEditar = document.createElement("button");
-  // botonEditar.textContent = "Editar";
-  // nuevaCeldaEditar.appendChild(botonEditar);
- 
 
 }
 //le paso como parametro el Id del turno q quiero eliminar 
@@ -142,3 +138,4 @@ function guardarTurnoComoObjeto(turnoObjeto) {
   //almacenon el objeto JSON  en el localstorage
   localStorage.setItem("datosTurno", turnoArrayJSON);
 }
+

@@ -1,10 +1,8 @@
 @import "./nav.css";
 @import "./tabla.css";
-@import "./formulario.css";
-/* @import "./fonts.css"; */
-/* @import "./color.css"; */
-/* @import "./common.css"; */
+@import "./formulario2.css";
 @import "./header.css";
+@import "boton.css";
 
 body{
     background-image: url(../img/fondo.jpg);
@@ -12,12 +10,3 @@ body{
     background-position: right top;
     background-attachment: fixed;
 }
-
-/* Estilo para la imagen del logo */
-/* .logo img {
-    width: 8%;
-    height: auto;
-    position: fixed;
-    left: 20%;
-    top: 0%;
-} */
